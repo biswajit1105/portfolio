@@ -59,18 +59,21 @@ const Index = () => {
               </p>
               <div className="flex flex-wrap gap-4 animate-fade-in delay-200">
                 <a href="#contact" className="btn-primary">
-                  Let's Talk
-                </a>
-                  <a href="/BiswajitMandal-SeniorProgrammer.pdf" className="btn-outline border-white/30 text-white hover:bg-white/10" download>
+                 Let's Talk
+                 <a
+                  href={`${import.meta.env.BASE_URL}BiswajitMandal-SeniorProgrammer.pdf`}
+                  className="btn-outline border-white/30 text-white hover:bg-white/10"
+                  download
+                  >
                   <Download size={16} />
                   Download Resume
-                </a>
+                  </a>
               </div>
             </div>
             <div className="flex justify-center">
               <div className="w-64 h-64 md:w-80 md:h-80 rounded-full border-4 border-primary overflow-hidden animate-fade-in">
                 <img 
-                  src="/ProfilePic.png" 
+                  src={`${import.meta.env.BASE_URL}ProfilePic.png`}
                   alt="Biswajit Mandal" 
                   className="w-full h-full object-cover"
                 />
@@ -300,21 +303,21 @@ const Index = () => {
             title="AWS For Beginners"
             organization="Great learning Academy"
             date="2024"
-            image="\SourceFile\Certificate\AWS.jpg"
+            image={`${import.meta.env.BASE_URL}SourceFile/Certificate/AWS.jpg`}
             certificateUrl="https://drive.google.com/file/d/12kx_nKXmM6MVXzDt9fbyUAvy_hnObTPM/view?usp=drive_link"
           />
           <CertificateCard 
             title= "Blockchain Basics"
             organization= "Great learning Academy"
             date= "2024"
-            image="\SourceFile\Certificate\Blockchain.jpg"
+            image={`${import.meta.env.BASE_URL}SourceFile/Certificate/Blockchain.jpg`}
             certificateUrl="https://drive.google.com/file/d/1nlIArYVgyDSQLVhDl6i8dhmLta-ap6mc/view?usp=drive_link"
             />
           <CertificateCard 
             title="Microsoft Excel 2013 Certification"
             organization="Great learning Academy"
             date="2024"
-            image="\SourceFile\Certificate\Excel.jpg"
+            image={`${import.meta.env.BASE_URL}SourceFile/Certificate\Excel.jpg`}
             certificateUrl="https://drive.google.com/file/d/1h5GAgUb6WcE6IHsjgs8REsq_l90wPC4x/view?usp=drive_link"
           />
           <CertificateCard 
@@ -328,7 +331,7 @@ const Index = () => {
             title="SIH-2020"
             organization="Smart India Hackathon"
             date="2020"
-            image="\SourceFile\Certificate\BIT_SIH.jpg"
+            image={`${import.meta.env.BASE_URL}SourceFile/Certificate\BIT_SIH.jpg`}
             certificateUrl="https://drive.google.com/file/d/1ZWv_z3ZYlpAP8ZmM1ZzRAMOwl0bLUyDF/view?usp=drive_link"
           />
         </div>
