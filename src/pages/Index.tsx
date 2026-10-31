@@ -60,11 +60,9 @@ const Index = () => {
               <div className="flex flex-wrap gap-4 animate-fade-in delay-200">
                 <a href="#contact" className="btn-primary">
                  Let's Talk
-                 <a
                   href={`${import.meta.env.BASE_URL}BiswajitMandal-SeniorProgrammer.pdf`}
                   className="btn-outline border-white/30 text-white hover:bg-white/10"
                   download
-                  >
                   <Download size={16} />
                   Download Resume
                   </a>
