@@ -115,9 +115,10 @@ const Header: React.FC = () => {
               </a>
             ))}
             <a
-              href="/resume.pdf"
-              className="btn-primary w-full flex justify-center mt-4"
-              download
+               href={`${import.meta.env.BASE_URL}BiswajitMandal-SeniorProgrammer.pdf`}
+  target="_blank"
+  rel="noopener noreferrer"
+  download="BiswajitMandal-SeniorProgrammer.pdf"
             >
               <Download size={16} />
               Download Resume

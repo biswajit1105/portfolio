@@ -58,14 +58,22 @@ const Index = () => {
                 Creating elegant solutions for complex problems with clean, efficient code.
               </p>
               <div className="flex flex-wrap gap-4 animate-fade-in delay-200">
+                {/* Let's Talk Button */}
                 <a href="#contact" className="btn-primary">
-                 Let's Talk
+                  Let's Talk
+                </a>
+
+                {/* Download Resume Button */}
+                <a
                   href={`${import.meta.env.BASE_URL}BiswajitMandal-SeniorProgrammer.pdf`}
                   className="btn-outline border-white/30 text-white hover:bg-white/10"
-                  download
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  download="BiswajitMandal-SeniorProgrammer.pdf"
+                >
                   <Download size={16} />
                   Download Resume
-                  </a>
+                </a>
               </div>
             </div>
             <div className="flex justify-center">
@@ -117,7 +125,7 @@ const Index = () => {
                           My journey into software development started during my B.Tech at BIT Mesra, where I built a strong foundation in programming, algorithms, and problem-solving. After graduating, I joined a Japan-based company, where I gained valuable hands-on experience working on web and desktop applications and collaborating on projects that enhanced both my technical and analytical skills.
             </p>
             <p className="text-muted-foreground">
-               When I am not coding, IÅfm exploring new technologies, learning best practices in software design, or participating in technical discussions that help me grow both technically and creatively.
+               When I am not coding, IÔøΩfm exploring new technologies, learning best practices in software design, or participating in technical discussions that help me grow both technically and creatively.
             </p>
           </div>
           <div className="reveal delay-200">
@@ -315,7 +323,7 @@ const Index = () => {
             title="Microsoft Excel 2013 Certification"
             organization="Great learning Academy"
             date="2024"
-            image={`${import.meta.env.BASE_URL}SourceFile/Certificate\Excel.jpg`}
+            image={`${import.meta.env.BASE_URL}SourceFile/Certificate/Excel.jpg`}
             certificateUrl="https://drive.google.com/file/d/1h5GAgUb6WcE6IHsjgs8REsq_l90wPC4x/view?usp=drive_link"
           />
           <CertificateCard 
@@ -329,7 +337,7 @@ const Index = () => {
             title="SIH-2020"
             organization="Smart India Hackathon"
             date="2020"
-            image={`${import.meta.env.BASE_URL}SourceFile/Certificate\BIT_SIH.jpg`}
+            image={`${import.meta.env.BASE_URL}SourceFile/Certificate/BIT_SIH.jpg`}
             certificateUrl="https://drive.google.com/file/d/1ZWv_z3ZYlpAP8ZmM1ZzRAMOwl0bLUyDF/view?usp=drive_link"
           />
         </div>
